@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chain Reaction Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Game Creator Section -->
+        <div id="creator-section">
+            <h2>Game Creator</h2>
+            <!-- Add six text boxes for input -->
+            <input type="text" id="word1" placeholder="Word 1">
+            <!-- Repeat for words 2 to 6 -->
+            <!-- ... -->
+            <button onclick="generateGame()">Generate Game</button>
+        </div>
+
+        <!-- Game Player Section -->
+        <div id="player-section" style="display:none;">
+            <h2>Game Player</h2>
+            <!-- Display the first and last word -->
+            <p id="display-words"></p>
+            <!-- Add six text boxes for guessing -->
+            <input type="text" id="guess1" disabled>
+            <!-- Repeat for guesses 2 to 5 -->
+            <!-- ... -->
+            <button onclick="checkGuess()">Submit Guess</button>
+            <p id="result-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
