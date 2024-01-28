@@ -2,6 +2,13 @@ let words = []; // Array to store the words
 let currentWordIndex = 0; // Index of the word player is currently guessing
 let incorrectGuesses = 0;
 
+function clearWords() {
+    // Clear all text boxes
+    for (let i = 1; i <= 6; i++) {
+        document.getElementById(`word${i}`).value = "";
+    }
+}
+
 function generateGame() {
     // Get words from input boxes
     for (let i = 1; i <= 6; i++) {
